@@ -1,0 +1,211 @@
+.technology {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.technology > .technology-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.technology > .technology-image {
+  bottom: 0;
+  position: relative;
+  max-width: 500px;
+  -webkit-transition: bottom 0.45s ease-in-out;
+  -moz-transition: bottom 0.45s ease-in-out;
+  -ms-transition: bottom 0.45s ease-in-out;
+  -o-transition: bottom 0.45s ease-in-out;
+  transition: bottom 0.45s ease-in-out;
+}
+.technology.transition > .technology-image {
+  bottom: 100vh;
+}
+
+.technology > .technology-image > img {
+  width: 100%;
+}
+.technology > .technology-image > img.landscape-image {
+  display: none;
+}
+
+.technology > .technology-info {
+  margin-left: 50px;
+  width: 50%;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.technology > .technology-content > .technology-info > .technology-text {
+  position: relative;
+  bottom: 0;
+  -webkit-transition: bottom 0.45s ease-in-out;
+  -moz-transition: bottom 0.45s ease-in-out;
+  -ms-transition: bottom 0.45s ease-in-out;
+  -o-transition: bottom 0.45s ease-in-out;
+  transition: bottom 0.45s ease-in-out;
+}
+
+.technology.transition
+  > .technology-content
+  > .technology-info
+  > .technology-text {
+  bottom: -100vh;
+}
+.technology
+  > .technology-content
+  > .technology-info
+  > .technology-text
+  > .technology-role {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  color: #707070;
+}
+.technology > .technology-content > .technology-info > .technology-text > h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+  letter-spacing: 2.2px;
+  color: #d0d6f9;
+}
+.technology
+  > .technology-content
+  > .technology-info
+  > .technology-text
+  > .technology-name {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.technology
+  > .technology-content
+  > .technology-info
+  > .technology-text
+  > .technology-description {
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  color: #d0d6f9;
+}
+
+@media screen and (max-width: 1200px) {
+  .technology > .technology-info > .technology-text > .technology-name {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .technology .main > .content > .technology {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .technology > .technology-image {
+    width: min(60%, 300px);
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .technology > .technology-image > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .technology > .technology-image > img.portrait-image {
+    display: none;
+  }
+
+  .technology > .technology-image > img.landscape-image {
+    display: block;
+  }
+
+  .technology > .technology-content {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .technology > .technology-content > .technology-info {
+    margin-left: 0px;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .technology > .technology-content > .technology-info > .technology-text {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .technology
+    > .technology-content
+    > .technology-info
+    > .technology-text
+    > .technology-description {
+    font-size: 1rem;
+    width: 100%;
+    max-width: 100%;
+    color: #d0d6f9;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technology
+    > .technology-content
+    > .technology-info
+    > .technology-text
+    > .technology-name {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 531px) {
+  .technology
+    > .technology-content
+    > .technology-info
+    > .technology-text
+    > .technology-role {
+    font-size: 1.2rem;
+  }
+  .technology
+    > .technology-content
+    > .technology-info
+    > .technology-text
+    > .technology-name {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (max-width: 495px) {
+  .technology
+    > .technology-content
+    > .technology-info
+    > .technology-text
+    > .technology-role {
+    font-size: 1.2rem;
+  }
+  .technology
+    > .technology-content
+    > .technology-info
+    > .technology-text
+    > .technology-name {
+    font-size: 1.7rem;
+  }
+}

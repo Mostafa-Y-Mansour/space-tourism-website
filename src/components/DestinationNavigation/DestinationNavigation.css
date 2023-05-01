@@ -1,0 +1,56 @@
+.DestinationNavigation {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.DestinationNavigation > .link {
+  text-decoration: none;
+  color: #d0d6f9;
+  position: relative;
+}
+
+.DestinationNavigation > .link::before {
+  content: "";
+  display: block;
+  background-color: #d0d6f9a0;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: -2px;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.DestinationNavigation > .link:hover:before {
+  width: 90%;
+}
+
+.DestinationNavigation > .link.active {
+  color: #fff;
+}
+
+.DestinationNavigation > .link.active::before {
+  display: block;
+  width: 90%;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1111px) {
+  .DestinationNavigation {
+    margin: 15px auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .DestinationNavigation {
+    width: 100%;
+  }
+  .DestinationNavigation > .link {
+    font-size: 0.75rem;
+  }
+}

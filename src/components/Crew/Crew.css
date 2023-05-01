@@ -1,0 +1,150 @@
+.crew {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.crew > .crew-image {
+  margin: auto;
+  height: 80vh;
+  left: 0;
+  -webkit-transition: left 0.45s ease-in-out;
+  -moz-transition: left 0.45s ease-in-out;
+  -ms-transition: left 0.45s ease-in-out;
+  -o-transition: left 0.45s ease-in-out;
+  transition: left 0.45s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 45vw;
+}
+.crew.transition > .crew-image {
+  left: -100vw;
+}
+
+.crew > .crew-image > img {
+  height: 100%;
+}
+
+.crew > .crew-info {
+  margin-left: 50px;
+  width: 60%;
+  max-width: 700px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.crew > .crew-info > .crew-text {
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.75s ease-in-out;
+  -moz-transition: left 0.75s ease-in-out;
+  -ms-transition: left 0.75s ease-in-out;
+  -o-transition: left 0.75s ease-in-out;
+  transition: left 0.75s ease-in-out;
+}
+.crew.transition > .crew-info > .crew-text {
+  left: -100vw;
+}
+.crew > .crew-info > .crew-text > .crew-role {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  color: #707070;
+}
+.crew > .crew-info > .crew-text > .crew-name {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.crew > .crew-info > .crew-text > .crew-bio {
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  color: #d0d6f9;
+}
+
+@media screen and (max-width: 1200px) {
+  .crew > .crew-image {
+    left: 50vw;
+    height: 65vh;
+  }
+  .crew > .crew-info > .crew-text > .crew-name {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .crew .main > .content > .crew {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .crew > .crew-image {
+    width: min(60%, 300px);
+    margin: auto;
+    height: auto;
+    left: 0;
+    -webkit-transition: left 0.45s ease-in-out;
+    -moz-transition: left 0.45s ease-in-out;
+    -ms-transition: left 0.45s ease-in-out;
+    -o-transition: left 0.45s ease-in-out;
+    transition: left 0.45s ease-in-out;
+    position: relative;
+  }
+
+  .crew > .crew-image > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .crew > .crew-info {
+    margin-left: 0px;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .crew > .crew-info > .crew-text {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .crew > .crew-info > .crew-text > .crew-bio {
+    font-size: 1rem;
+    width: 100%;
+    max-width: 100%;
+    color: #d0d6f9;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crew > .crew-info > .crew-text > .crew-name {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 531px) {
+  .crew > .crew-info > .crew-text > .crew-role {
+    font-size: 1.2rem;
+  }
+  .crew > .crew-info > .crew-text > .crew-name {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (max-width: 495px) {
+  .crew > .crew-info > .crew-text > .crew-role {
+    font-size: 1.2rem;
+  }
+  .crew > .crew-info > .crew-text > .crew-name {
+    font-size: 1.7rem;
+  }
+}

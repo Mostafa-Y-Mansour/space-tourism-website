@@ -1,0 +1,95 @@
+.information .main {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  color: #fff;
+  display: flex;
+}
+.information.destination .main {
+  background: url("../../assets/destination/background-destination-desktop.jpg")
+    no-repeat;
+  background-size: cover;
+}
+.information.crew .main {
+  background: url("../../assets/crew/background-crew-desktop.jpg") no-repeat;
+  background-size: cover;
+}
+.information.technology .main {
+  background: url("../../assets/technology/background-technology-desktop.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
+.information .main > .content {
+  width: 100%;
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.information .main > .content > .static {
+  width: 100%;
+  max-width: 590px;
+}
+.information .main > .content > .static > h2 {
+  font-size: 1.8rem;
+
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2.2px;
+}
+.information .main > .content > .static > h2 > span {
+  color: #707070;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1111px) {
+  .information .main > .content {
+    margin-top: 130px;
+  }
+  .information .main > .content > .static > h2 {
+    /* margin-left: 50px; */
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .information .main > .content > .static > h2 {
+    font-size: 1.1rem;
+    /* margin-left: 0px; */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .information.destination .main {
+    background: url("../../assets/destination/background-destination-tablet.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+  .information.crew .main {
+    background: url("../../assets/crew/background-crew-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+  .information.technology .main {
+    background: url("../../assets/technology/background-technology-tablet.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .information.destination .main {
+    background: url("../../assets/destination/background-destination-mobile.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+  .information.crew .main {
+    background: url("../../assets/crew/background-crew-mobile.jpg") no-repeat;
+    background-size: cover;
+  }
+  .information.technology .main {
+    background: url("../../assets/technology/background-technology-mobile.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+}

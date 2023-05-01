@@ -1,0 +1,37 @@
+.CrewNavigation {
+  min-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  -webkit-width: -webkit-fit-content;
+  -moz-width: -moz-fit-content;
+  -ms-width: -ms-fit-content;
+  -o-widths: -o-fit-content;
+  width: fit-content;
+}
+
+.CrewNavigation > .link {
+  text-decoration: none;
+  background-color: #97979744;
+  position: relative;
+  padding: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.CrewNavigation > .link.active {
+  background-color: #fff;
+}
+
+.CrewNavigation > span {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .CrewNavigation {
+    margin: 30px auto;
+  }
+}

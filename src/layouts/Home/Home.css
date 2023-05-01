@@ -1,0 +1,130 @@
+.home .main {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../assets/home/background-home-desktop.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+}
+.home .main > .content {
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.home .main > .content > .text-box {
+  width: 50%;
+  max-width: 550px;
+}
+
+.home .main > .content > .text-box > h1 {
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #d0d6f9;
+}
+
+.home .main > .content > .text-box > span {
+  text-transform: uppercase;
+  font-size: 8rem;
+  width: 100%;
+}
+
+.home .main > .content > .text-box > p {
+  width: 73%;
+  color: #d0d6f9;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.home .main > .content > .explore > a {
+  display: block;
+  width: 274px;
+  height: 274px;
+  background-color: #fff;
+  line-height: 274px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0b0d17;
+  font-size: 2rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  margin-top: 80px;
+  outline: 0px solid #97979744;
+  transition: outline-width 0.3s ease;
+  -webkit-transition: outline-width 0.3s ease;
+  -moz-transition: outline-width 0.3s ease;
+  -ms-transition: outline-width 0.3s ease;
+  -o-transition: outline-width 0.3s ease;
+}
+.home .main > .content > .explore > a:hover {
+  outline-width: 88px;
+}
+
+@media screen and (max-width: 900px) {
+  .home .main {
+    background: url("../../assets/home/background-home-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+  .home .main > .content {
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .home .main > .content > .text-box {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .main > .content > .text-box > h1 {
+    font-size: 1.5rem;
+  }
+
+  .home .main > .content > .text-box > p {
+    width: 80%;
+  }
+
+  .home .main > .content > .explore > a {
+    width: 242px;
+    height: 242px;
+    line-height: 242px;
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .home .main {
+    background: url("../../assets/home/background-home-mobile.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .home .main > .content > .text-box > h1 {
+    font-size: 1.9rem;
+  }
+
+  .home .main > .content > .text-box > p {
+    width: 90%;
+  }
+
+  .home .main > .content > .text-box > span {
+    font-size: 6rem;
+    width: 100%;
+  }
+  .home .main > .content > .explore > a {
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+    font-size: 1.4rem;
+    margin-top: 0px;
+  }
+}
